@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Count</title>
+    <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline;
+    }
+    </style>
+</head>
+<h1>Word Count</h1><br />
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="{% url 'about' %}">About</a></li>
+</ul>
+
+
+
+<!-- writing pythion code within braces -->
+<!-- using dictionary  of python-->
+<!--{{hithere}}-->
+
+<form action="{% url 'count' %}">
+  <textarea name="fulltext" rows="10" cols="40"></textarea>
+  <br />
+  <input type="submit" name="" value="Count!" />
+
+</form>
